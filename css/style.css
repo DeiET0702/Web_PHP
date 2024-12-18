@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    min-height: 100%;
+    color: #555;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-column-gap: 30px;
+    grid-template-rows: 70px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav .branch{
+    font-size: 28px;
+    font-weight: bold;
+    color: #245990;
+}
+
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 35px;
+    transition: background-color 0.3s, color 0.3s;
+    color: #245990;
+    font-size: 18px;
+}
+
+nav a:hover,
+nav a.active {
+    background: #4d9176;
+    color: #fff;
+    border-radius: 3px;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+}
+
+
+/* Định dạng cho form */
+form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng cho các nhãn (label) */
+form label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Định dạng cho các input field */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; /* Đảm bảo padding không làm rộng thêm phần tử */
+}
+
+/* Định dạng cho button */
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hiệu ứng hover cho button */
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Định dạng cho thông báo thành công hoặc lỗi */
+form .message {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+form .message.success {
+    color: green;
+}
+
+form .message.error {
+    color: red;
+}
+
+/* Định dạng cho các phần tiêu đề (h2) */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.post h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+.post p {
+    margin: 10px 0;
+    color: #555;
+}
+.post small {
+    color: #888;
+    font-size: 0.9rem;
+}
+.action-buttons {
+    margin-top: 5px; 
+}
+
+.action-buttons a {
+    display: inline-block;
+    margin-right: 10px; 
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #4d9176;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons a:hover {
+    background-color: #245990;
+}
+
+/* Style for user action buttons */
+.user-actions {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.user-actions .btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.user-actions .btn.logout {
+    background-color: #f44336; 
+}
+
+.user-actions .btn:hover {
+    background-color: #45a049; 
+}
+
+.user-actions .btn.logout:hover {
+    background-color: #d32f2f; 
+}
+
+.username-display {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
